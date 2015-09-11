@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
+  
+  
 <head>
-  <title>Blog</title>
+  <title>My First Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<%= yield %>
+<div class="page_wrap clearfix">
+  <div class="top"></div>
+  <div class="header">
+    <h1>SenseTime Job</h1>
+ 
+    
+    <img src="../images/footer_bg.jpg" alt=""
+    width="650" height="20" /></div>
+    
+  <div class="container clearfix">
+    <div class="left_nav" id="nav">
+      <div class="left_nav_top"></div>
+      <ul>
+        <li><a href="#">[1] 返回首页</a></li>
+        <li><a href="#">[2] 我的博客</a></li>
+        <li><a href="#">[3] 发表随笔</a></li>
+        <li><a href="#">[4] 嘻哈相册</a></li>
+        <li><a href="#">[5] 标签归类</a></li>
+        <li><a href="#">[6] 个人档案</a></li>
+        <li><a href="#">[7] 亲朋好友</a></li>
+        <li><a href="#">[8] 看看微博</a></li>
+      </ul>
+      <div class="left_nav_bottom"></div>
+    </div>
+    
+  <%= yield %>
 
+  </div>
+ 
+  <div class="bottom clearfix">
+    <div class="footer clearfix"> Copyright, 2015 SenseTime &nbsp;&#8226;&nbsp; Design
+      by SenseTime </div>
+  </div>
+</div>
 </body>
 </html>
